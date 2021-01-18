@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo Anttila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+
+</head>
+    <body>
+ 
+        <header>
+            <div class="logo">
+                <img src="./assets/img/logo2.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="./CV.html" class="nav__link">CV</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!-- Intro-->
+        <section class="portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                NIR Spectrometry<strong>Scanner</strong>
+            </h1>
+            <p class="section__subtitle section__project-subtitle--intro">Product Development Thesis </p>
+            <img src="assets/img/projects/scanner0.PNG" alt="scanner" class="portfolio-intro__img">
+        </section>
+        <section class="portfolio__body">
+        <div class="portfolio-item-individual">
+            <p>
+                I am currently working on my thesis, which is a product development project to develop a scanner to
+                be used at plastics recycling locations to identify different types of plastics. The project includes 3D-design of injection
+                molded parts and selection of electronics components.
+            </p>
+            <p>
+                On the component side the scanner runs on Raspberry Pi 4 and includes a uninterruptible power supple (UPS), which enables the scanner to be used 
+                on battery power and while charging via USB-C. Sensor used is a NIR-spectrometry sensor inserted in a custom-made housing support.
+            </p>
+                <div class="small-portfolio__img">
+                    <img src="assets/img/projects/scanner_front_1.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                    <img src="assets/img/projects/scanner_front_2.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                    <img src="assets/img/projects/scanner_front_3.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                </div>
+            <p>
+                All electronic components are housed inside the main compartment shown in the images above. The handle contains the batteries, connection wires, 
+                trigger used for scanning, charging cable and a water-tight plug that holds the batteries in place and closes the electrical circuit.
+            </p>
+                <div class="small-portfolio__img">
+                    <img src="assets/img/projects/scanner_side_1.PNG" class="small-portfolio__img_hover2" alt="scanner sideview">
+                </div>
+            <p>
+                All of the plastic components have been designed in SolidWorks and 3D-printed on my modified Creality Ender-3 with PLA.
+                The scanner will undergo testing, after which I will design a final version.
+            </p>
+        </div>
+    </section>
+        
+        <footer class="footer"><a class="footer__link"></a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:anttilatimo27@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/timoanttila27/">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https:/twitter.com">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https:/github.com">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.thingiverse.com/timber27/designs">
+                        <i class="fas fa-cubes"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
