@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo Anttila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="../assets/img/logo2.png" alt="logo"></a>
+            </div>
+            <div class="lang">
+                <a href="../pneumatic.html"><img src="../assets/img/eng.png" class="lang_size"></a>
+                <a href="pneumatic.html"><img src="../assets/img/fin.png" class="lang_size"></a>
+             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Etusivu</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">Minusta</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Projektini</a></li>
+                    <li class="nav__item"><a href="./CV.html" class="nav__link">CV</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        
+        <main>
+
+        <!-- Intro-->
+        <section class="portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                Sähköpneumaattinen<strong>SCARA Nivel</strong>
+            </h1>
+            <p class="section__subtitle section__project-subtitle--intro">Ryhmäprojekti, Kevät 2020</p>
+            <img src="../assets/img/projects/pneumatic0.png" alt="pneumatic joint" class="portfolio-intro__img">
+        </section>
+        <section class="portfolio__body">
+        <div class="portfolio-item-individual">
+            <p>
+                Kokoonpanorobotit ovat nykyisin teollisuudessa hyvin suosittuja, ja onkin osoitettu käytännössä kuinka robotit voivat parantaa kokoonpanon tarkkuutta, vähentää kokoonpanoaikaa ja tarjota kustannussäästöjä. 
+                SCARA (Selective Compliance Assembly Robot Arm) -tyyppiset robotit ovat vuosia olleet yleisesti teollisuuden käytössä mekaanisten ja elektronisten komponenttien ja laitteiden kokoonpanossa tehdasolosuhteissa. 
+                SCARA-robotit ovat yleensä ulkoisesti johdotettuja, jolloin käyttöjännite, signaalijohdot ja pneumatiikkajohdot sijaitsevat robotin käsivarsien ulkopuolella. Syynä tähän on robottien valmistus- ja kokoonpanokustannukset; 
+                johtojen vienti robotin nivelissä sijaitsevien moottoreiden akselien läpi on huomattavasti monimutkaisempaa ja vaatii erityisiä lisäosia, kuten liukurenkaita. Sisäisellä johdotuksella kuitenkin saataisiin näistä roboteista paremmin 
+                toimivia ja johdot suojattua paremmin ympäristöltä ja mekaaniselta rasitukselta
+            </p>
+            <div class="small-portfolio__img">
+                <img src="../assets/img/projects/scara.PNG" class="small-portfolio__img_hover" alt="scara robot">
+            </div>
+            <p>
+                Projektin lähtökohtana oli suunnitella asiakasyrityksen tarpeisiin soveltuva SCARA-robotin olkanivelen vääntömoottorin kotelointi 
+                ja läpivientiratkaisu, jolla nivelen sisällä saataisiin kuljetettua muihin robotin osiin suuntaavat käyttöjännitteet, signaalit ja 
+                paineilmat. Toiveena oli myös, että nivel pystyy pyörimään vapaasti ympäri sekä pikaliikkeessä että hitaammassa liikkeessä. 
+                Tätä ratkaisua sovellettaisiin myöhemmässä vaiheessa robotin kyynär- ja ranneniveliin prototyyppivaiheen jälkeen. 
+                Tehtävässä tuli onnistua ilman minkäänlaisia ulkoisia johtoja tai kanavia. Heti alkuun oli selvää, että tässä onnistuminen vaatii 
+                sähköpneumaattisen liukurenkaan: joko omavalmisteisen tai valmiskomponentin. Sähkön ja paineilman välittäminen ei onnistu pyörivässä akselissa 
+                ilman liukurengasta.
+                
+            </p>
+            <p> Oman komponentin valmistusta sekä valmiskomponenttien tilaamista ja sovittamista haluttuihin vääntömoottoreihin ja enkoodereihin 
+                alettiin selvittämään heti projektin alussa. Molemmista saatiin tehtyä varteenotettavat esisuunnitelmat, 
+                ja vaikka oman liukurengasratkaisun kehittäminen oli kiinnostavin ja haastavin vaihtoehto, päädyimme kehittämään 
+                valmiskomponentteihin perustuvaa ratkaisua asiakkaan halusta saada koteloinnista varmasti toimiva ja helposti huollettava.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="../assets/img/projects/torque.PNG" class="small-portfolio__img_hover" alt="torque motor">
+                <img src="../assets/img/projects/splitview.PNG" class="small-portfolio__img_hover" alt="split view">
+            </div>
+            <p>
+                Sähköpneumaattinen liukurengas päätettiin hankkia Senringiltä, jolta sai helposti kustomoitavan ratkaisun riippuen käyttöjännitekaapeleiden, 
+                signaalikaapeleiden ja pneumatiikkajohtojen lukumäärästä.
+                Tämä kuitenkin toi kokoonpanon suunnitteluun aivan uuden haasteen: nivelen korkeus. SCARA-robotin nivelen tulisi olla mahdollisimman matala, 
+                sillä nivelen korkeus tuo suunnitteluteknisiä ongelmia ja vaikuttaa osaltaan myös robotin käsivarren paksuuteen. Moottorikoteloinnin päälle 
+                sijoittuva liukurengas ei välitä mitään voimia, mutta sen korkeus aiheuttaa sen, että moottorikoteloinnin korkeudesta on pystyttävä tinkimään 
+                kokonaiskorkeuden rajoittamiseksi. Valitsemamme Senring -liukurengas oli korkeudeltaan 192 mm, joten painetta koteloinnin tiivistämiseksi oli 
+                reilusti.
+                
+            </p>
+            <p>
+                Usean suunnittelukierroksen jälkeen koteloinnin korkeus saatiin supistettua 144 millimetriin, 
+                joka oli hyvä saavutus ottaen huomioon vääntömoottorin 130 mm halkaisija. Vääntömoottorin lisäksi pakettiin piti 
+                mahduttaa enkooderi, kaksi kartiorullalaakeria sekä kolme kiinnityslaippaa. 
+            </p>
+            <div class="small-portfolio__img">
+                <img src="../assets/img/projects/pneumatic1.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+                <img src="../assets/img/projects/pneumatic2.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+                <img src="../assets/img/projects/pneumatic3.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+
+            </div>
+            <p>
+                Koronavirustilanteen takia prototyypin valmistaminen viivästyi merkittävisti, sillä osien toimitusajat pitenivät ja 
+                kohtuuhintaisen koneistuksen löytäminen Suomessa oli melkein mahdotonta. Prototyypin testaus ei ollut mahdollista, 
+                mutta paperilla asiat kuitenkin näyttivät erittäin hyvältä ja prototyyppi saatiin kasattua ennen kesää.
+                Mikäli prototyypin testaus olisi onnistunut, olisi ollut mahdollista ruveta kehittämään kyynär- ja ranneniveliin samanlaisia ratkaisuja, 
+                ja lopuksi saada suunniteltua täysin toimiva SCARA-robotti, josta ei roiku ylimääräisiä johtoja. 
+
+            </p>
+            
+        </div>
+    </section>
+            </main>
+        <footer class="footer"><a class="footer__link"></a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:anttilatimo27@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/timoanttila27/">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/TimoAnttila27">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Timber278">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.thingiverse.com/timber27/designs">
+                        <i class="fas fa-cubes"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

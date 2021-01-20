@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo Anttila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+
+</head>
+    <body>
+ 
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./assets/img/logo2.PNG" alt="logo"></a>
+            </div>
+            <div class="lang">
+                <a href="pneumatic.html"><img src="./assets/img/eng.png" class="lang_size"></a>
+                <a href="./fin/pneumatic.html"><img src="./assets/img/fin.png" class="lang_size"></a>
+             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="./CV.html" class="nav__link">CV</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!-- Intro-->
+        <section class="portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                Electro-Pneumatic<strong>SCARA Joint</strong>
+            </h1>
+            <p class="section__subtitle section__project-subtitle--intro">Group Project, Spring 2020</p>
+            <img src="assets/img/projects/pneumatic0.png" alt="pneumatic joint" class="portfolio-intro__img">
+        </section>
+        <section class="portfolio__body">
+        <div class="portfolio-item-individual">
+            <p>
+                Industrial assembly robots are very popular nowadays, and it has been made obvious how robots can help assembly by increasing accuracy and reducing assembly time.
+                SCARA (Selective Compliance Assembly Robot Arm) robots have been used for decades in the assembly of mechanical and electronic components in industrial settings.
+                SCARA robots often have external cables for power, signal and pneumatic pressure. This is ensure that the robot is cheap to manufacture and assemble, as
+                carrying these cables externally thought the joints increases complexity and requires additional parts, like slip rings. Howeve, with internal cabling
+                these robots can be better protected from the environment and mechanical wear.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/scara.PNG" class="small-portfolio__img_hover" alt="scara robot">
+            </div>
+            <p>
+                The starting point of the project was the design a housing for a SCARA robot shoulder joint, which would enable power, signals and pneumatic pressures to be carried internally.
+               The joint should be allowed to freely rotate both in rapid movement and slow transfer under load. This solution would later on be used in 
+               the elbow and wrist joints. The task required us to no use any kind external cables or channels. It was clear from the beginning that this solution
+               would require an electro-pneumatic slip-ring; either designed by us or purchased from a supplier, as carrying electricity and pneumatic pressure internally is not possible without one.
+            </p>
+            <p>
+                We looked into designing and manufacturing our own slip-ring, but these R&D and manufacturing costs became restrictive. We started designing
+                a solution which would rely mostly on pre-made parts.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/torque.PNG" class="small-portfolio__img_hover" alt="torque motor">
+                <img src="assets/img/projects/splitview.PNG" class="small-portfolio__img_hover" alt="split view">
+            </div>
+            <p>
+                We decided to purchase the slip-ring from Senring, as they offered an easily customizable solution depending on the number of cables required.
+                This however created an entirely new problem; height. The joint should be as low as possible, as the extra height will cause additional torque
+                and increase the thickness of the robot arms. The slip-ring does not carry any force, but the height required us to make the housing as short as possible.
+                The slip-ring was 192 mm high, so this created plenty of problems. After several design rounds, we managed to get the housing down to 144 mm, which 
+                was quite decent considering that the torque motor had an external diameter of 130 mm. In addition, we needed to include an encoder, two tapered roller bearings and three attachment plates.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/pneumatic1.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+                <img src="assets/img/projects/pneumatic2.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+                <img src="assets/img/projects/pneumatic3.PNG" class="small-portfolio__img_hover" alt="hinge joint">
+
+            </div>
+            <p>
+                Due to the Covid-19 situation, the manufacturing of the prototype was significantly delayed, as delivery times increased and finding affordable machining in Finland was next to impossible.
+                We were also unable to test the prototype, but on paper the designed looked really good and we managed to get the parts and assemble the prototype before summer.
+                If prototype testing would have been successful, it would have been possible to continue designing the elbow and wrist joints with similar solutions, ultimately
+                leading to a fully functioning SCARA robot without external cables hanging around.
+            </p>
+            
+        </div>
+    </section>
+        
+        <footer class="footer"><a class="footer__link"></a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:anttilatimo27@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/timoanttila27/">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/TimoAnttila27">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Timber278">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.thingiverse.com/timber27/designs">
+                        <i class="fas fa-cubes"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo Anttila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+
+</head>
+    <body>
+ 
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./assets/img/logo2.PNG" alt="logo"></a>
+            </div>
+            <div class="lang">
+                <a href="printer.html"><img src="./assets/img/eng.png" class="lang_size"></a>
+                <a href="./fin/printer.html"><img src="./assets/img/fin.png" class="lang_size"></a>
+             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="./CV.html" class="nav__link">CV</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!-- Intro-->
+        <section class="portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                3D Printer<strong>Enclosure</strong>
+            </h1>
+            <p class="section__subtitle section__project-subtitle--intro">Personal Project </p>
+            <img src="assets/img/projects/printerbox0.PNG" alt="scanner" class="portfolio-intro__img">
+        </section>
+        <section class="portfolio__body">
+        <div class="portfolio-item-individual">
+            <p>
+                I love 3D design and 3D printing is an awesome way of getting from a concept to a tangible part or device.
+                However, 3D printing is a smelly business and the fumes can be toxic, especially when pringing TPU or ABS. I live in a small apartment in a cold country, so ventilation can't solve the problem.
+                This is why I decided to build an enclosure with HEPA and active carbon fume extraction. The enclosure also helps to keep the ambient temperature steady, improving print quality.
+            </p>
+            <p>
+                For the frame of the enclosure, I bought a server cabinet cheaply online and insulated it with recycled insulation sheets, and covered the insulation with.
+                Aluminium foil to maximize heat reflection. The sheets of insulation covered with aluminium where bolted onto the enclosure walls
+                and the edges were further sealed with aluminium tape. Finally, I placed a garden stone on the floor of the enclosure to minimize vibration
+                from the floor.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/printerbox5.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                <img src="assets/img/projects/printerbox3.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                <img src="assets/img/projects/printerbox7.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+            </div>
+            <p>
+                I also needed to build the fans and filtration system to collect fumes from the enclore, for this I used two 12V computer fans,
+                ventilation parts and 3D printed fittings. I inserted the HEPA filter on the outside of the filtration system and sheets of active carbon filters on the inside.
+                Finally this system was sealed with hot glue to prevent any air leakage. The enclosure door was sealed with window seal.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/printerbox4.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                <img src="assets/img/projects/printerbox6.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+
+            </div>
+            <p>
+                In order to keep the electronic components from failing in the relatively high ambient temperature, I extended all the electrical wires and moved
+                the electronics on the outside of the enclosure. The only electronic parts inside the enclosure are the stepper motors, limit switches and LED-lighting.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/printerbox2.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                <img src="assets/img/projects/printerbox8.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+
+            </div>
+            <p>
+                I also designed a new filament spool holder, that I could keep dry and in room temperature outside the enclosure. The enclosure is not yet finished,
+                and as soon as I find the time, I will create an Arduino-based overheat shutdown system and a Raspberry-based remote control and monitoring system.
+            </p>
+            <div class="small-portfolio__img">
+                <img src="assets/img/projects/printerbox10.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                <img src="assets/img/projects/printerbox9.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+
+            </div>
+        </div>
+    </section>
+        
+        <footer class="footer"><a class="footer__link"></a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:anttilatimo27@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/timoanttila27/">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/TimoAnttila27">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Timber278">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.thingiverse.com/timber27/designs">
+                        <i class="fas fa-cubes"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

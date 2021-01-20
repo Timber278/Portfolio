@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timo Anttila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="../assets/img/logo2.png" alt="logo"></a>
+            </div>
+            <div class="lang">
+                <a href="../scanner.html"><img src="../assets/img/eng.png" class="lang_size"></a>
+                <a href="scanner.html"><img src="../assets/img/fin.png" class="lang_size"></a>
+             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Etusivu</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">Minusta</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Projektini</a></li>
+                    <li class="nav__item"><a href="./CV.html" class="nav__link">CV</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        
+        <main>
+
+        <!-- Intro-->
+        <section class="portfolio-intro">
+            <h1 class="section__title section__title--intro">
+                NIR Spektrometri<strong>Skanneri</strong>
+            </h1>
+            <p class="section__subtitle section__project-subtitle--intro">Tuotekehitys/Insinöörityö </p>
+            <img src="../assets/img/projects/scanner0.PNG" alt="scanner" class="portfolio-intro__img">
+        </section>
+        <section class="portfolio__body">
+        <div class="portfolio-item-individual">
+            <p>
+                Teen parhaillaan opinnäytetyönäni tuotekehitysprojektia, jonka tarkoituksena on kehittää NIR spektrometriskanneri,
+                jota voidaan käyttää muovilaadun tunnistamiseen ja joka toimisi luotettavasti tuotantolaitosolosuhteissa.
+                Projekti sisältää skannerin 3D-suunnittelun, muovivaluanalyysin ja elektronisten komponenttien valinnanja yhteensovittamisen.
+            </p>
+            <p>
+                Komponenttipuolella skanneri toimii Raspberry Pi 4:llä, johon on liitetty keskeytymätön virtalähde (UPS), joka mahdollistaa
+                skannerin käyttämisen akkuviralla ja latauksen aikana. Sensorina käytetään NIR-spektrometrisensoria, joka on liitetty kustomoidussa koteloinnissa sensorin suojaamiseksi.
+            </p>
+                <div class="small-portfolio__img">
+                    <img src="../assets/img/projects/scanner_front_1.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                    <img src="../assets/img/projects/scanner_front_2.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                    <img src="../assets/img/projects/scanner_front_3.PNG" class="small-portfolio__img_hover" alt="scanner sensor">
+                </div>
+            <p>
+                Kaikki sähkökomponentit sijaitsevat skannerin etuosan pääkotelossa, kuten ylläolevista kuvista näkee. Skannerin kahvaan on sijoitettu paristot,
+                liitinjohdon, liipaisin skannaamista varten, latausjohto ja vesitiivistetty ruuvitulppa, joka pitää paristot paikalaan ja sulkee sähköpiirin.
+            </p>
+                <div class="small-portfolio__img">
+                    <img src="../assets/img/projects/scanner_side_1.PNG" class="small-portfolio__img_hover2" alt="scanner sideview">
+                </div>
+            <p>
+                Kaikki muoviset osat on suunniteltu SolidWorksillä ja 3D-tulostettu modifioidulla Creality Ender-3:lla PLA-muovista.
+                Skanneria tullaan testaamaan, jonka jälkeen skannerista suunnitellaan viimeinen, valmis versio.
+            </p>
+            </div>
+            </section>
+            </main>
+        <footer class="footer"><a class="footer__link"></a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:anttilatimo27@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/timoanttila27/">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/TimoAnttila27">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Timber278">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.thingiverse.com/timber27/designs">
+                        <i class="fas fa-cubes"></i>
+                    </a></li>
+            </ul>
+        </footer>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
